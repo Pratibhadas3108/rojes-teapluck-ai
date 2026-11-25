@@ -38,7 +38,7 @@ Compared to manual plucking, TeaPluck AI augments operator speed and consistency
 3. **In-Field Quality Check & Handoff:** At the weighing shed, the unit syncs batch telemetry (estimated fine-leaf %, shoot count, area covered) over BLE/Wi-Fi to the TeaPluck AI dashboard, giving factory managers immediate leaf-grade visibility before withering.
 
 **Prototype & Proof of Work Artifacts:**
-To demonstrate technical feasibility prior to field hardware fabrication, Rojes Labs has built and deployed the **TeaPluck AI Interactive Web Prototype & Vision Simulator** — live at **https://teaguard-spray-monitor.pages.dev/** (also included in the accompanying Proof of Work PDF). Key proof-of-work components include:
+To demonstrate technical feasibility prior to field hardware fabrication, Rojes Labs has built and deployed the **TeaPluck AI Interactive Web Prototype & Vision Simulator** — live at **https://rojes-teapluck-ai.pages.dev/** (also included in the accompanying Proof of Work PDF). Key proof-of-work components include:
 - **Interactive AI Canopy Vision Simulator:** Demonstrates real-time bounding-box detection, class differentiation (*Two Leaves & a Bud* vs. *Mature/Banji* vs. *Coarse Stem*), internode cut-point targeting, and confidence scoring across three Assam field lighting regimes (Morning Dew, Midday Glare, Dense Flush).
 - **UI Wireframes & Edge Telemetry Mockups:** Complete operator mobile/HUD wireframes, estate supervisor block-analytics screens, and hardware-software state diagrams.
 - **Simulated Edge Benchmark Metrics:** Evaluates model quantization trade-offs (FP16 vs. INT8), inference latency targets (<35 ms/frame), and expected fine-leaf yield retention under varying canopy densities.
@@ -138,7 +138,7 @@ Rojes Labs is led by **Pratibha Das Hatibaruah** (Lead Applicant), bringing mult
 4. **Edge Inference Latency:** <35 ms per frame at ≥25 FPS on-device.
 
 **Evidence of Progress:**
-Rojes Labs has completed problem-space validation, system architecture design, and an **interactive web-based prototype & vision simulator (TeaPluck AI)** — live at https://teaguard-spray-monitor.pages.dev/ — demonstrating shoot classification, cut-point localization, and estate telemetry workflows. No unverified external field pilot results are claimed at this stage; controlled field validation is scoped for Phase 4 with TRA-Tocklai.
+Rojes Labs has completed problem-space validation, system architecture design, and an **interactive web-based prototype & vision simulator (TeaPluck AI)** — live at https://rojes-teapluck-ai.pages.dev/ — demonstrating shoot classification, cut-point localization, and estate telemetry workflows. No unverified external field pilot results are claimed at this stage; controlled field validation is scoped for Phase 4 with TRA-Tocklai.
 
 ---
 

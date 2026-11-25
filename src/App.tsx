@@ -31,7 +31,7 @@ export function App() {
             <a href="#admin">Admin Console</a>
             <a href="#proposal">NESFIC-I-05 Proposal</a>
             <a
-              href="https://teaguard-spray-monitor.pages.dev/"
+              href="https://rojes-teapluck-ai.pages.dev/"
               target="_blank"
               rel="noopener noreferrer"
               style={{ color: '#6ee7b7', fontWeight: 700 }}
@@ -59,7 +59,7 @@ export function App() {
 
               <div className="hero-actions">
                 <a
-                  href="https://teaguard-spray-monitor.pages.dev/"
+                  href="https://rojes-teapluck-ai.pages.dev/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn btn-primary"
