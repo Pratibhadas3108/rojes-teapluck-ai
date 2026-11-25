@@ -1,6 +1,8 @@
+import io
 import os
 import re
 from pathlib import Path
+from PIL import Image as PILImage
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
@@ -17,6 +19,20 @@ from reportlab.platypus import (
 from reportlab.graphics.shapes import Drawing, Rect, String, Line, Circle
 
 ROOT = Path(__file__).resolve().parent.parent
+
+
+def embed_image(fpath: Path, w_mm: float) -> Image:
+    """Embed image preserving exact aspect ratio and compressing to keep PDF < 10 MB."""
+    with PILImage.open(fpath) as im:
+        im_rgb = im.convert("RGB")
+        aspect = im_rgb.height / im_rgb.width
+        max_w = 1440
+        if im_rgb.width > max_w:
+            im_rgb = im_rgb.resize((max_w, int(round(max_w * aspect))), PILImage.Resampling.LANCZOS)
+        buf = io.BytesIO()
+        im_rgb.save(buf, format="JPEG", quality=88, optimize=True)
+        buf.seek(0)
+        return Image(buf, width=w_mm, height=w_mm * aspect)
 OUT_DIR = ROOT / "proposal" / "output"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -205,7 +221,7 @@ def generate_proposal_pdf(styles, sections):
             fpath = img_dir / fname
             if fpath.exists():
                 story.append(Spacer(1, 2 * mm))
-                story.append(Image(str(fpath), width=w_mm, height=h_mm))
+                story.append(embed_image(fpath, w_mm))
                 story.append(Paragraph(f"<i>{cap}</i>", styles["body"]))
         story.append(Spacer(1, 4 * mm))
 
@@ -355,7 +371,7 @@ def generate_pow_pdf(styles):
     for fname, caption, w_mm, h_mm in visual_specs:
         fpath = img_dir / fname
         if fpath.exists():
-            story.append(Image(str(fpath), width=w_mm, height=h_mm))
+            story.append(embed_image(fpath, w_mm))
             story.append(Paragraph(f"<i>{caption}</i>", styles["body"]))
             story.append(Spacer(1, 3 * mm))
 
