@@ -28,6 +28,14 @@ export function App() {
             <a href="#architecture">Architecture</a>
             <a href="#admin">Admin Console</a>
             <a href="#proposal">NESFIC-I-05 Proposal</a>
+            <a
+              href="https://teaguard-spray-monitor.pages.dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{ color: '#6ee7b7', fontWeight: 700 }}
+            >
+              Live Demo ↗
+            </a>
           </nav>
         </div>
       </header>
@@ -48,6 +56,14 @@ export function App() {
               </p>
 
               <div className="hero-actions">
+                <a
+                  href="https://teaguard-spray-monitor.pages.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-primary"
+                >
+                  🚀 Live Demo <ExternalLink size={15} />
+                </a>
                 <a href="#vision-simulator" className="btn btn-primary">
                   Launch Vision Simulator
                 </a>
