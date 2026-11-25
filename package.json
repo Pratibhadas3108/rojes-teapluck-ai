@@ -1,0 +1,27 @@
+{
+  "name": "teapluck-ai-nesfic-i-05",
+  "private": true,
+  "version": "1.0.0",
+  "description": "TeaPluck AI — Low-Cost AI-Enabled Selective Plucking Solution for NESFIC-I-05 by TeaTech Labs",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --port 5173 --host",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "generate:images": "bash scripts/run_gemini_image_pipeline.sh",
+    "generate:pdfs": "python3 scripts/generate_pdfs.py"
+  },
+  "dependencies": {
+    "lucide-react": "^0.460.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "puppeteer-core": "^24.43.1",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.1"
+  }
+}

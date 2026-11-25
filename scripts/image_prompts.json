@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "section": "Section 1 — Problem & Selectivity",
+    "filename": "canopy-comparison.png",
+    "title": "TeaPluck AI vs. Flat Motorized Shear: Selective 'Two Leaves & a Bud' Framework",
+    "prompt": "A high-impact 16:9 widescreen technological framework infographic on a clean white and light-gray blueprint grid background illustrating SELECTIVE TEA PLUCKING: AI COMPUTER VISION VS. CONVENTIONAL FLAT SHEAR. The header features bold dark navy typography with subtitle Deconstructing Shoot Selectivity for Assam Tea Estates (NESFIC-I-05 | TRA-Tocklai). Left diagnostic panel (Emerald Green): TeaPluck AI Edge Vision scanning a tea bush canopy with crisp emerald bounding boxes on 'Two Leaves & a Bud', gold internode cut-point reticles, and dashed amber/rose masks sparing immature buds and rejecting coarse stems. Right diagnostic panel (Crimson/Slate): Conventional motorized flat shear cutting blindly across a planar line, mixing fibrous coarse leaves and bruising buds. Bottom metric badges: >=85% Target Fine-Leaf Ratio, <5% Bud Damage, 25-30 FPS On-Device, and 100% Bush Health Preservation. Clean 2D flat vector aesthetic, dark navy, emerald green, cyan, and amber accents, ultra-sharp typography."
+  },
+  {
+    "id": 2,
+    "section": "Section 2 — Hardware Concept",
+    "filename": "hardware-concept.png",
+    "title": "TeaPluck AI Ergonomic Selective Plucking System (<2.2 kg Head & 24V Harness)",
+    "prompt": "A high-impact 16:9 widescreen technological product architecture infographic on a clean white and light-gray blueprint grid background illustrating TEAPLUCK AI: ERGONOMIC EDGE-AI SELECTIVE PLUCKING HARDWARE. The header displays bold dark navy typography with subtitle Human-Guided Mobility + Automated Micro-Actuation for Sloped Assam Plantations. Center-left shows a breathable padded backpack harness housing a 24V LiFePO4 battery pack (6-8 hr runtime) and <15W Edge AI NPU module, connected via a flexible pneumatic leaf-collection tube and UART power tether to a lightweight (<2.2 kg) handheld selective plucking head on the right. Callout boxes highlight: 1) Polarized Global-Shutter HDR Camera + Diffused Ring-LED; 2) 8-Aperture Indexed Micro-Shear Comb; 3) Haptic & LED Target-Lock Ring; 4) Low-Pressure Gentle Shoot Suction. Metric badges: <2.2 kg Head Weight, <Rs 40,000 Target Scale BOM, IP54 Monsoon Seal. Clean 2D flat vector technical illustration, emerald green, deep navy, cyan, and gold accents, crisp labels."
+  },
+  {
+    "id": 3,
+    "section": "Section 3 — Operator Workflow",
+    "filename": "operator-journey.png",
+    "title": "4-Step Operator Field Workflow & Sub-45ms Edge Latency Pipeline",
+    "prompt": "A structured 16:9 widescreen technological workflow infographic on a clean white blueprint grid background illustrating THE 4-STEP OPERATOR FIELD JOURNEY & REAL-TIME LATENCY PIPELINE. The header features bold dark navy typography TEAPLUCK AI FIELD-TO-FACTORY WORKFLOW with subtitle End-to-End Execution from Assam Tea Bush to Weighing Shed. Four vibrant color-coded sequential pillar cards connected by glowing fiber/signal arrows: 1) Pre-Field Calibration (Emerald Green, 2 mins): Select Assam clone profile (TV1, TV23, S.3A/3) & ambient light balance; 2) Real-Time AI Vision Lock (Cyan/Blue, <35 ms/frame): Quantized INT8 YOLOv8n NPU classifies 2L+Bud and locates internode cut; 3) Indexed Micro-Shear Actuation (Amber, <10 ms UART trigger): Only aligned apertures fire, diverting shoots via gentle airflow; 4) Offline-First Weighing Shed Sync (Deep Navy, BLE/Wi-Fi): Syncs Fine-Leaf Count % and kg/block to Estate PWA. Clean 2D flat vector aesthetic, crisp borders, ultra-sharp typography."
+  },
+  {
+    "id": 4,
+    "section": "Section 4 — IP54 Optical & Actuation Stack",
+    "filename": "ip54-exploded.png",
+    "title": "IP54 Monsoon-Ruggedized Optical, Edge-NPU & Micro-Shear Architecture",
+    "prompt": "A master engineering 16:9 widescreen exploded-view architectural infographic on a clean white blueprint background with subtle technical gridlines illustrating IP54 MONSOON-RUGGEDIZED OPTICAL & ACTUATION STACK. The header displays bold dark navy typography EDGE-TO-ACTUATOR HARDWARE ARCHITECTURE with subtitle Engineered for Assam Dew, Midday Glare & Zero-Connectivity Estates. Five distinct color-coded vertical diagnostic layers arranged left-to-right with crisp vector icons: 1) Polarized Optical Glass Filter (blocks wet-leaf glare & dew speculars); 2) Diffused Ring-LED Illumination Array (uniform fill light under dense shade); 3) Global-Shutter RGB + INT8 Edge NPU (<15W thermal envelope, 13-40 TOPS); 4) 8-Aperture Indexed Micro-Shear Comb (STM32/ESP32 CAN/UART safety interlock <18mm); 5) Sealed UN38.3 LiFePO4 Pack + Pneumatic Channel. Clean 2D flat vector aesthetic, royal blue, emerald green, amber, and dark navy corporate palette, crisp technical typography."
+  },
+  {
+    "id": 5,
+    "section": "Section 6 — 12-Month Roadmap",
+    "filename": "gantt-timeline.png",
+    "title": "12-Month NESFIC-I-05 Development Roadmap & TRL Progression",
+    "prompt": "A clean 16:9 widescreen project governance infographic on a white blueprint grid background illustrating 12-MONTH DEVELOPMENT ROADMAP & VALIDATION MILESTONES (TRL 4 TO TRL 6). The header features bold dark navy typography TEAPLUCK AI EXECUTION TIMELINE with subtitle Phased Engineering from Discovery to TRA-Tocklai Field Validation. Displays four color-coded horizontal Gantt bars across Months M1 to M12: Phase 1 (M1-M3, Deep Navy): Agronomic Spec, 5,000+ Assam Shoot Dataset & INT8 Model v1 (>=85% mAP); Phase 2 (M4-M6, Cyan): CAD Micro-Shear Rig & Benchtop HIL (<50 ms latency); Phase 3 (M7-M9, Emerald Green): IP54 Field MVP (<2.2 kg), Offline PWA & 50-hr Burn-in; Phase 4 (M10-M12, Amber): TRA-Tocklai A/B/C Field Trials & DFM BOM Freeze. Includes a prominent vertical milestone marker at End of Month 9: READY FOR VALIDATION. Clean 2D flat vector aesthetic, crisp gridlines and milestone badges."
+  },
+  {
+    "id": 6,
+    "section": "Section 9 — Pilot Benchmarks",
+    "filename": "pilot-benchmark-chart.png",
+    "title": "3-Arm TRA-Tocklai Pilot Comparison Targets (Manual vs. Flat Shear vs. TeaPluck AI)",
+    "prompt": "A high-impact 16:9 widescreen analytical benchmark infographic on a clean white blueprint grid background illustrating 3-ARM TRA-TOCKLAI PILOT COMPARISON TARGETS (MONTHS 10-12). The header displays bold dark navy typography COMPARATIVE PERFORMANCE & QUALITY BENCHMARKS with subtitle Evaluating Fine-Leaf Ratio, Bud Preservation & Daily Throughput Across Matched Assam Plots. Features crisp grouped diagnostic bar charts and KPI cards comparing: Control Arm A (Manual Plucking, Slate): 89% Fine-Leaf, 97% Bud Preservation, 25 kg/day; Control Arm B (Flat Motorized Shear, Crimson): 60% Fine-Leaf, 78% Bud Preservation, 62 kg/day low-grade; Arm C (TeaPluck AI Target, Emerald Green): >=88% Fine-Leaf, 95% Bud Preservation, 53 kg/day fine-grade (2.1x manual throughput). Includes TRA 100g Fine-Leaf Count (FLC) protocol badge. Clean 2D flat vector aesthetic, sharp data labels, executive clarity."
+  },
+  {
+    "id": 7,
+    "section": "Section 12 — ₹40 Lakhs Budget Allocation",
+    "filename": "cost-allocation.png",
+    "title": "Indicative Resource & Budget Allocation (₹40 Lakhs NESFIC 2026 Grant)",
+    "prompt": "A crisp 16:9 widescreen financial governance infographic on a clean white blueprint grid background illustrating INDICATIVE RESOURCE & BUDGET ALLOCATION (RS. 40 LAKHS NESFIC 2026 GRANT). The header features bold dark navy typography 12-MONTH GRANT UTILIZATION & COST DRIVERS with subtitle Rojes Labs | Lead Applicant: Pratibha Das Hatibaruah | Target Scale BOM < Rs. 40,000. Center-left displays a clean color-coded donut chart totaling Rs. 40 Lakhs; right side shows four structured diagnostic breakdown cards: 1) Technical Engineering Team — Rs. 20 Lakhs (50%, Deep Navy): CV/Edge AI, Embedded/Mechatronics & Full-Stack Engineers; 2) Hardware Prototyping & Fabrication — Rs. 12 Lakhs (30%, Emerald Green): Edge NPU kits, HDR optics, micro-actuators, 3-5 IP54 units; 3) Dataset Collection & TRA Field Trials — Rs. 6 Lakhs (15%, Amber): Assam canopy annotation & 6-week Jorhat pilot; 4) Testing, Safety & IP — Rs. 2 Lakhs (5%, Cyan): IP54/UN38.3 testing & patent filing. Clean 2D flat vector aesthetic, ultra-sharp typography."
+  }
+]
