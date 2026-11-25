@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { Leaf, ExternalLink, ShieldCheck } from 'lucide-react';
 import { VisionSimulator } from './components/VisionSimulator';
+import { TutorialSection } from './components/TutorialSection';
 import { VisualGallery } from './components/VisualGallery';
 import { ArchitectureAndJourney } from './components/ArchitectureAndJourney';
 import { AdminConsole } from './components/AdminConsole';
@@ -23,6 +24,7 @@ export function App() {
 
           <nav className="nav-links" aria-label="Primary Navigation">
             <a href="#overview">Overview</a>
+            <a href="#tutorial">Tutorial</a>
             <a href="#vision-simulator">Vision Simulator</a>
             <a href="#visual-evidence">Visuals</a>
             <a href="#architecture">Architecture</a>
@@ -108,6 +110,7 @@ export function App() {
           </div>
         </section>
 
+        <TutorialSection />
         <VisionSimulator
           confidenceThreshold={confidenceThreshold}
           onConfidenceChange={setConfidenceThreshold}
@@ -147,6 +150,7 @@ export function App() {
               </div>
               <div style={{ marginTop: '0.45rem', display: 'flex', gap: '0.9rem', flexWrap: 'wrap' }}>
                 <a href="#overview" style={{ color: '#6ee7b7', textDecoration: 'none' }}>Overview</a>
+                <a href="#tutorial" style={{ color: '#6ee7b7', textDecoration: 'none' }}>Tutorial</a>
                 <a href="#vision-simulator" style={{ color: '#6ee7b7', textDecoration: 'none' }}>Simulator</a>
                 <a href="#architecture" style={{ color: '#6ee7b7', textDecoration: 'none' }}>Architecture</a>
                 <a href="#proposal" style={{ color: '#6ee7b7', textDecoration: 'none' }}>Proposal</a>
