@@ -16,7 +16,7 @@ Today’s estate workflow relies on manual pluckers walking 1.0–1.5 m wide plu
 
 The primary beneficiaries are Assam tea estates, small tea growers (STGs), estate field supervisors, plucking operators, and factory leaf-reception managers, alongside TRA-Tocklai researchers seeking scalable field mechanization.
 
-The core gap addressed by NESFIC-I-05 is the absence of an affordable, ruggedized, field-deployable selective plucking system that replicates human visual discrimination at the bush canopy without requiring expensive industrial robotics or cloud connectivity. The intended outcome is a low-cost, AI-enabled selective plucking device and companion workflow that preserves "two leaves and a bud" selectivity (>85% target fine-leaf ratio in field conditions), reduces physical strain, stabilizes plucking round intervals, and integrates seamlessly into existing estate leaf-weighment and quality-tracking operations.
+The core gap addressed by NESFIC-I-05 is the absence of an affordable, ruggedized, field-deployable selective plucking system that replicates human visual discrimination at the bush canopy without requiring expensive industrial robotics or cloud connectivity. The intended outcome is a low-cost, AI-enabled selective plucking device and companion workflow that preserves "two leaves and a bud" selectivity (Greater Than 85% target fine-leaf ratio in field conditions), reduces physical strain, stabilizes plucking round intervals, and integrates seamlessly into existing estate leaf-weighment and quality-tracking operations.
 
 -----------------------------------------------------------------
 2. Proposed solution & key features  [290 / 500 words]
@@ -44,7 +44,7 @@ Prototype & Proof of Work Artifacts:
 To demonstrate technical feasibility prior to field hardware fabrication, Rojes Labs has built and deployed the TeaPluck AI Interactive Web Prototype & Vision Simulator — live at https://teaguard-spray-monitor.pages.dev/ (also included in the accompanying Proof of Work PDF). Key proof-of-work components include:
 • Interactive AI Canopy Vision Simulator: Demonstrates real-time bounding-box detection, class differentiation (Two Leaves & a Bud vs. Mature/Banji vs. Coarse Stem), internode cut-point targeting, and confidence scoring across three Assam field lighting regimes (Morning Dew, Midday Glare, Dense Flush).
 • UI Wireframes & Edge Telemetry Mockups: Complete operator mobile/HUD wireframes, estate supervisor block-analytics screens, and hardware-software state diagrams.
-• Simulated Edge Benchmark Metrics: Evaluates model quantization trade-offs (FP16 vs. INT8), inference latency targets (<35 ms/frame), and expected fine-leaf yield retention under varying canopy densities.
+• Simulated Edge Benchmark Metrics: Evaluates model quantization trade-offs (FP16 vs. INT8), inference latency targets (Smaller than 35 ms/frame), and expected fine-leaf yield retention under varying canopy densities.
 
 Full wireframes, architecture schematics, and simulator outputs are compiled in the attached Proof of Work PDF.
 
@@ -55,7 +55,7 @@ TeaPluck AI is architected as a modular, offline-first Edge-to-Cloud system opti
 
 1. Hardware & Embedded Stack:
 • Vision Sensor: Global-shutter / HDR RGB camera module with polarized lens filter and diffused ring-LED illumination to handle Assam’s harsh midday glare, monsoon overcast, and morning dew.
-• Edge Compute: Low-power AI SoC (e.g., Raspberry Pi 5 + Hailo-8L NPU or Jetson Orin Nano 4GB/8GB) delivering 13–40 TOPS INT8 within a <15W power envelope, powered by a swappable 24V LiFePO4 backpack battery (6–8 hours runtime).
+• Edge Compute: Low-power AI SoC (e.g., Raspberry Pi 5 + Hailo-8L NPU or Jetson Orin Nano 4GB/8GB) delivering 13–40 TOPS INT8 within a Smaller than 15W power envelope, powered by a swappable 24V LiFePO4 backpack battery (6–8 hours runtime).
 • Actuation & Mechanics: Brushless micro-servos / solenoid-indexed rotary micro-blades arranged in a compact comb-array, paired with a lightweight 3D-printed/carbon-nylon housing and low-wattage pneumatic collection tube.
 
 2. AI/ML & Computer Vision Pipeline:
@@ -73,7 +73,7 @@ Rojes Labs follows an iterative, field-driven Hardware-in-the-Loop (HIL) & Agile
 
 1. Discovery & Agronomic Baseline: Shadow manual pluckers and mechanical-shear operators in Assam estates (in coordination with TRA-Tocklai) to document shoot geometry across key clones (e.g., TV1, TV23, P126), plucking-table heights, and acceptable stem-cut tolerances. Key Output: Agronomic specification sheet and image-capture protocol.
 2. Dataset Curation & Vision Model Training: Collect and annotate multi-angle, multi-lighting tea canopy imagery (dew, shade, glare, rain). Train and quantize lightweight object + cut-point models, benchmarking precision/recall and FPS on target edge hardware. Key Output: Quantized INT8 vision model and confusion-matrix report.
-3. Benchtop Prototype & Mechanism Iteration: Build 3D-printed/CNC micro-shear test rigs on an indoor gantry over potted tea bushes. Validate vision-to-actuator latency (<45 ms end-to-end) and mechanical cut cleanliness without leaf bruising. Key Output: Functional benchtop selective-plucking rig (TRL 4).
+3. Benchtop Prototype & Mechanism Iteration: Build 3D-printed/CNC micro-shear test rigs on an indoor gantry over potted tea bushes. Validate vision-to-actuator latency (Smaller than 45 ms end-to-end) and mechanical cut cleanliness without leaf bruising. Key Output: Functional benchtop selective-plucking rig (TRL 4).
 4. Integrated Field MVP: Package the camera, edge NPU, battery pack, and ergonomic handheld/harness head into a weather-sealed (IP54) field unit, integrated with the TeaPluck AI PWA dashboard. Key Output: Field-ready MVP unit (TRL 5–6).
 5. Controlled Field Trials & Refinement: Conduct side-by-side trials against manual plucking and flat-shear harvesting on TRA-Tocklai experimental plots. Refine blade geometry, confidence thresholds, and ergonomics based on operator feedback and factory green-leaf quality scores. Key Output: Pilot validation report and production-ready BOM.
 
@@ -83,19 +83,19 @@ Rojes Labs follows an iterative, field-driven Hardware-in-the-Loop (HIL) & Agile
 The proposed development roadmap spans 12 months from grant/project kickoff to pilot-validated MVP, organized into four phases:
 
 • Phase 1 (Months 1–3) — Discovery, Dataset & Vision Core:
-  * Milestones: M1.1 Agronomic spec & TRA-Tocklai alignment; M1.2 Annotated Assam tea-shoot dataset (5,000+ labeled frames across 3+ lighting conditions); M1.3 Edge vision model v1 achieving ≥85% mAP@50 at ≥25 FPS on target NPU.
-  * Dependencies: Access to estate/TRA-Tocklai plots for raw image capture.
+  - Milestones: M1.1 Agronomic spec & TRA-Tocklai alignment; M1.2 Annotated Assam tea-shoot dataset (5,000+ labeled frames across 3+ lighting conditions); M1.3 Edge vision model v1 achieving ≥85% mAP@50 at ≥25 FPS on target NPU.
+  - Dependencies: Access to estate/TRA-Tocklai plots for raw image capture.
 
 • Phase 2 (Months 4–6) — Selective Actuation Rig & Benchtop Integration:
-  * Milestones: M2.1 CAD design and fabrication of indexed micro-shear plucking head; M2.2 Closed-loop vision-to-actuator benchtop integration (<50 ms total latency); M2.3 Potted-bush selectivity and bruising test report.
-  * Dependencies: Component lead times for micro-actuators and optical filters.
+  - Milestones: M2.1 CAD design and fabrication of indexed micro-shear plucking head; M2.2 Closed-loop vision-to-actuator benchtop integration (Smaller than 50 ms total latency); M2.3 Potted-bush selectivity and bruising test report.
+  - Dependencies: Component lead times for micro-actuators and optical filters.
 
 • Phase 3 (Months 7–9) — Field-Ruggedized MVP & Software Dashboard:
-  * Milestones: M3.1 Ergonomic, IP54-sealed handheld/harness assembly (<2.2 kg head weight) with 6-hour backpack battery; M3.2 Offline-first PWA telemetry dashboard; M3.3 Pre-pilot safety and endurance burn-in (50+ hours).
-  * Ready for Validation: End of Month 9, the integrated MVP is ready for formal controlled field validation.
+  - Milestones: M3.1 Ergonomic, IP54-sealed handheld/harness assembly (Smaller than 2.2 kg head weight) with 6-hour backpack battery; M3.2 Offline-first PWA telemetry dashboard; M3.3 Pre-pilot safety and endurance burn-in (50+ hours).
+  - Ready for Validation: End of Month 9, the integrated MVP is ready for formal controlled field validation.
 
 • Phase 4 (Months 10–12) — TRA-Tocklai Field Validation & BOM Freeze:
-  * Milestones: M4.1 Side-by-side field trials (TeaPluck AI vs. Manual vs. Flat Shear) measuring fine-leaf %, kg/hour, and bush recovery; M4.2 Made-tea quality evaluation; M4.3 Design-for-Manufacturing (DFM) BOM optimization targeting <₹35,000–₹45,000 unit cost at scale.
+  - Milestones: M4.1 Side-by-side field trials (TeaPluck AI vs. Manual vs. Flat Shear) measuring fine-leaf %, kg/hour, and bush recovery; M4.2 Made-tea quality evaluation; M4.3 Design-for-Manufacturing (DFM) BOM optimization targeting Smaller than ₹35,000–₹45,000 unit cost at scale.
 
 -----------------------------------------------------------------
 7. Data & information requirements  [193 / 500 words]
@@ -131,14 +131,14 @@ Indicative Manpower Allocation: 3.5–4.0 FTE peak during hardware-software inte
 -----------------------------------------------------------------
 Development Testing Strategy:
 • Unit & Simulation Testing: Automated test suites for the vision inference pipeline, confidence-thresholding logic, and actuator safety interlocks.
-• Benchtop Hardware-in-the-Loop (HIL): Potted tea-bush rigs testing end-to-end latency (<50 ms), cut-height accuracy (±4 mm), and mechanical jam recovery across 10,000+ actuation cycles.
+• Benchtop Hardware-in-the-Loop (HIL): Potted tea-bush rigs testing end-to-end latency (Smaller than 50 ms), cut-height accuracy (±4 mm), and mechanical jam recovery across 10,000+ actuation cycles.
 • Field Stress Testing: Thermal, moisture-mist, and vibration endurance tests simulating 6-hour Assam estate shifts.
 
 Proposed Performance & Quality Measures (KPIs):
 1. Selectivity Precision (Fine-Leaf %): ≥85% "two leaves and a bud" + soft shoot ratio in harvested basket (measured via standard TRA 100g leaf-analysis sorting), compared to ~55–65% typical of non-selective mechanical shears.
-2. Bud Damage Rate: <5% accidental shearing of immature single buds/pekoes.
+2. Bud Damage Rate: Smaller than 5% accidental shearing of immature single buds/pekoes.
 3. Harvesting Throughput: 2.0–2.5× productivity improvement over average manual plucking (target 45–60 kg green leaf/operator/day) while maintaining bush table health.
-4. Edge Inference Latency: <35 ms per frame at ≥25 FPS on-device.
+4. Edge Inference Latency: Smaller than 35 ms per frame at ≥25 FPS on-device.
 
 Evidence of Progress:
 Rojes Labs has completed problem-space validation, system architecture design, and an interactive web-based prototype & vision simulator (TeaPluck AI) — live at https://teaguard-spray-monitor.pages.dev/ — demonstrating shoot classification, cut-point localization, and estate telemetry workflows. No unverified external field pilot results are claimed at this stage; controlled field validation is scoped for Phase 4 with TRA-Tocklai.
@@ -147,7 +147,7 @@ Rojes Labs has completed problem-space validation, system architecture design, a
 10. Security, privacy, safety & compliance  [183 / 500 words]
 -----------------------------------------------------------------
 1. Operator & Mechanical Safety:
-• Physical Guarding: Recessed micro-shear apertures (<18 mm opening) prevent finger entry; dual-hand or dead-man trigger interlocks immediately halt actuation when released.
+• Physical Guarding: Recessed micro-shear apertures (Smaller than 18 mm opening) prevent finger entry; dual-hand or dead-man trigger interlocks immediately halt actuation when released.
 • Electrical & Battery Safety: UN38.3-compliant LiFePO4 battery packs with over-current, thermal cutoff, and short-circuit protection, enclosed in IP54+ moisture-resistant housings for monsoon operation.
 
 2. Data Privacy & Estate Confidentiality:
@@ -168,10 +168,10 @@ TeaPluck AI bridges the gap between expensive, impractical autonomous field robo
 Existing Alternatives & Prior Art:
 • Manual Plucking: High quality, zero capex, but faces severe labor shortages and rising costs.
 • Handheld/Two-Person Motorized Shears (e.g., Kawasaki/Honda cutters): High throughput, but non-selective—cuts coarse leaves and immature buds together, degrading tea quality and stressing bushes.
-• Autonomous Robotic Harvesters (Academic/Overseas prototypes): Costly multi-DOF robotic arms (>₹10–25 Lakhs), slow cycle times (2–4 seconds/shoot), and fragile in monsoon/slope conditions.
+• Autonomous Robotic Harvesters (Academic/Overseas prototypes): Costly multi-DOF robotic arms (Greater Than ₹10–25 Lakhs), slow cycle times (2–4 seconds/shoot), and fragile in monsoon/slope conditions.
 
 Basis of Differentiation:
-• 10×–20× Lower Cost than robotic arms (targeting <₹40,000 at scale).
+• 10×–20× Lower Cost than robotic arms (targeting Smaller than ₹40,000 at scale).
 • Indexed Multi-Aperture Micro-Shear enables parallel shoot selection without bulky robotic arms.
 • Assam-Specific Clone & Lighting Adaptation tuned for Northeast Indian tea cultivars.
 
@@ -191,7 +191,7 @@ Indicative Resource & Budget Allocation (₹40 Lakhs Grant):
 Key Risks & Mitigations:
 1. Harsh Field Lighting & Rain/Dew Interference: Mitigated via polarized HDR optics, diffused ring-LED fill lighting, and wet-leaf training augmentation.
 2. Mechanical Jamming / Stem Toughness Variation: Mitigated using high-torque micro-shears with auto-reverse anti-jam firmware and replaceable blade cartridges.
-3. Operator Ergonomics & Adoption: Mitigated by keeping handheld weight <2.2 kg (offloading battery/compute to a padded waist/backpack harness) and conducting early ergonomics co-design with estate pluckers.
+3. Operator Ergonomics & Adoption: Mitigated by keeping handheld weight Smaller than 2.2 kg (offloading battery/compute to a padded waist/backpack harness) and conducting early ergonomics co-design with estate pluckers.
 
 Pilot Validation Plan:
 In Months 10–12, Rojes Labs will partner with TRA-Tocklai (Jorhat) and a consenting commercial Assam estate to run a 6-week controlled A/B/C trial across matched bush plots comparing (A) Manual Plucking, (B) Conventional Motorized Shear, and (C) TeaPluck AI, evaluating Fine-Leaf %, kg/operator-hour, bush regeneration at 14/28 days, and factory made-tea tasting scores.
